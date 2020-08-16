@@ -9,7 +9,7 @@ import reducers from '../redux/reducers';
 const store = createStore(reducers, initialState());
 
 export const Slider = (props) => {
-  let i = require(localImages[0].toString)
+
   function next(){
     i++
   }
@@ -17,7 +17,7 @@ export const Slider = (props) => {
     <View>
       <Text>This is slider!</Text>
       <View style={styles.sliderWrapper}>
-        <Image style={styles.sliderWrapper__image} source={ i }/> 
+        <Image style={styles.sliderWrapper__image} source={ require('../images/1.jpg') }/> 
       </View>
       <View style={styles.sliderWrapper__buttons}>
         <Button
